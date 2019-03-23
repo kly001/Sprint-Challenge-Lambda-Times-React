@@ -24,11 +24,8 @@ const Tab = props => {
       {props.tab.toUpperCase()}
     </div>
   );
-};
-Tab.propTypes = {
-  selectTab: PropTypes.string,
-  selectTabHandler: PropTypes.func,
 }
+
 // Make sure you include PropTypes on your props.
 
 export default Tab;
