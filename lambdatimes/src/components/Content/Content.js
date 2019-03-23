@@ -46,7 +46,7 @@ export default class Content extends Component {
     */
 
     if(this.state.selected==="all"){
-      return this.state.cards;
+      return this.state.cards
     } else {
       return this.state.cards.filter(card => card.tab===this.state.selected)
     }
@@ -61,8 +61,8 @@ export default class Content extends Component {
           and `selectTabHandler` that includes the function to change the selected tab
         */}
         <Tabs tabs={this.state.tabs} />
-        selectedTab={this.state.selected},
-        selectTabHandler={this.state.changeSelected}
+            selectedTab={this.selected}
+            selectTabHandler={this.state.changeSelected}
         />
         <Cards cards={this.filterCards()} />
       </div>
