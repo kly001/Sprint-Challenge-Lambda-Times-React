@@ -26,7 +26,7 @@ letter-spacing: 1px;
 padding: 0 10px;
 `;
 
-const StyledContainerLeft = styled.div`
+const ContainerLeft = styled.div`
 display: flex;
   justify-content: none;
   align-items: center;
@@ -40,7 +40,7 @@ cursor: pointer;
   margin-right: 25%;
   font-weight: bold;
 `;
-const StyledContainerCenter = styled.div`
+const ContainerCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,24 +54,39 @@ cursor: pointer;
   margin-right: 5%;
 `;
 
+const ContainerRight = styled.div`
+display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  font-size: 11px;
+  font-weight: bold;
+`;
+
+const RightSpan = styled.div`
+cursor: pointer;
+`
+ 
+
 const TopBar = () => {
   return (
     <StyledTopBar>
       <StyledTopBarContainer>
-        <StyledContainerLeft>
+        <ContainerLeft>
           <LeftSpan>TOPICS</LeftSpan>
           <LeftSpan>SEARCH</LeftSpan>
-        </StyledContainerLeft>
-        <StyledContainerCenter>
+        </ContainerLeft>
+        <ContainerCenter>
           <CenterSpan>GENERAL</CenterSpan>
           <CenterSpan>BROWNBAG</CenterSpan>
           <CenterSpan>RANDOM</CenterSpan>
           <CenterSpan>MUSIC</CenterSpan>
           <CenterSpan>ANNOUNCEMENTS</CenterSpan>
-        </StyledContainerCenter>
-        <div className="container-right">
-          <span>LOG IN</span>
-        </div>
+        </ContainerCenter>
+        <ContainerRight>
+          <RightSpan>LOG IN</RightSpan>
+        </ContainerRight>
       </StyledTopBarContainer>
     </StyledTopBar>
   )
