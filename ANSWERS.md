@@ -19,3 +19,9 @@ A Higher Order Component(HOC) is an advanced technique in React for reusing comp
 --------------------------------------------------------------------------------------------
 
 4.  What are three different ways to style components in React? Explain some of the benefits of each.
+
+1.  CSS Stylesheet: separate css files for each component; good for more complex applications.
+
+2.  Inline Styling: style applied directly to the element; good for adding just a few style         properties.
+
+3.  Styled-Components: library for React adn React Native; allows you to use component-level styles that are written with a mixture of JavaScript and CSS.
