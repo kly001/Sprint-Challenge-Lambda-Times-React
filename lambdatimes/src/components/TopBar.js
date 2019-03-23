@@ -66,17 +66,19 @@ display: flex;
 
 const RightSpan = styled.div`
 cursor: pointer;
-`
+`;
  
 
 const TopBar = () => {
   return (
     <StyledTopBar>
       <StyledTopBarContainer>
+        
         <ContainerLeft>
           <LeftSpan>TOPICS</LeftSpan>
           <LeftSpan>SEARCH</LeftSpan>
         </ContainerLeft>
+
         <ContainerCenter>
           <CenterSpan>GENERAL</CenterSpan>
           <CenterSpan>BROWNBAG</CenterSpan>
@@ -84,9 +86,11 @@ const TopBar = () => {
           <CenterSpan>MUSIC</CenterSpan>
           <CenterSpan>ANNOUNCEMENTS</CenterSpan>
         </ContainerCenter>
+
         <ContainerRight>
           <RightSpan>LOG IN</RightSpan>
         </ContainerRight>
+
       </StyledTopBarContainer>
     </StyledTopBar>
   )
