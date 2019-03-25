@@ -12,7 +12,7 @@ export default class Content extends Component {
     this.state = {
       selected: "all",
       tabs: [],
-      cards: []
+      cards: [],
     };
   }
 
@@ -27,7 +27,7 @@ export default class Content extends Component {
   changeSelected = tab => {
     // this function should take in the tab and update the state with the new tab.
     this.setState( {
-      tab:tab
+      selected:tab
     })
   };
 

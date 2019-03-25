@@ -7,6 +7,7 @@ const Tab = props => {
       if it is not it should just be 'tab'*/
 
       let tabCategory = "";
+      console.log(props)
       if(props.tab === props.selectedTab) {
         tabCategory = "tab active-tab"
       } else {
