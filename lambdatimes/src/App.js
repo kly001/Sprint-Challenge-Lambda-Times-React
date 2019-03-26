@@ -3,6 +3,9 @@ import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
 
+
+// Import TopBar, Header and Content and display it inside App.
+
 const App = () => {
   return (
     <div className="App">
